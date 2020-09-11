@@ -3,7 +3,7 @@ const db = require("../models");
 // Defining methods for the controller
 module.exports = {
     findAll: function (req, res) {
-        db.Products
+        db.Product
             .findAll({})
             .then(dbProduct => res.json(dbProduct))
             .catch(err => res.status(422).json(err));

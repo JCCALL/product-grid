@@ -6,7 +6,7 @@ const express = require("express");
 // const cors = require('cors');
 // const bodyParser = require('body-parser');
 // const logger = require("morgan")
-const seeder = require('./seeder/Products');
+const seeder = require('./seeders/20200911212217-Products');
 const routes = require("./routes");
 const sequelize = require("sequelize");
 
