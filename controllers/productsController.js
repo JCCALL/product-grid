@@ -1,5 +1,4 @@
 const db = require("../models");
-const { Sequelize } = require("../models");
 
 // Defining methods for the controller
 module.exports = {
@@ -34,9 +33,6 @@ module.exports = {
     update: function(req, res) {
         db.Product
             .update(
-                // {
-                //     default: true
-                // },
                 {
                   title: req.body.title,
                   description: req.body.description,
