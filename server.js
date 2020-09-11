@@ -3,7 +3,7 @@ const path = require("path");
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const logger = require("morgan")
-const seeder = require('./seeder/Products');v
+const seeder = require('./seeder/Products');
 
 // Initialize Express
 const app = express();

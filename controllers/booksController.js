@@ -1,4 +1,5 @@
 const db = require("../models");
+const { Sequelize } = require("../models");
 
 // Defining methods for the booksController
 module.exports = {
