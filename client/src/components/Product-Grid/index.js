@@ -63,7 +63,7 @@ class ProductGrid extends Component {
                             { data.quantity }
                         </td>
                         <td>
-                            { data.price }
+                            ${ data.price } 
                         </td>
                     </tr>
                     
