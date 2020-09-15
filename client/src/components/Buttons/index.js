@@ -45,7 +45,7 @@ class Buttons extends Component {
             price: this.state.inputPrice,
             image: this.state.inputImage,
         }
-        var show = this.state.show
+        let show = this.state.show
         API.createProduct(data, show).then((res) => {
             console.log(res);
             this.setState({ show: false })
@@ -57,8 +57,8 @@ class Buttons extends Component {
     render() {
         return (
             <div>
-                <button type="button" id="create-product" onClick={this.handleShow}>
-                    <i className="fa fa-plus fa-1x pr-2" aria-hidden="true"></i>Create
+                <button type="button" id="create-product" className="btn btn-primary btn-sm" onClick={this.handleShow}>
+                   Create
                 </button>
                 <Modal 
                     show={this.state.show} 

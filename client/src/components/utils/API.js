@@ -17,7 +17,7 @@ export default {
   },
   
   //delete
-  deleteBook: function(id) {
+  deleteProduct: function(id) {
     return axios.delete("/api/products/" + id);
   },
 };

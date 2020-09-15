@@ -1,19 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
-import API from "../utils/API";
-import Modal from "react-bootstrap/Modal";
 
-class Delete extends Component{
 
-    render() {
+function Delete(props) {
+
         return (
-            <div className="absolute-center">
-                <button type="button" id="delete-product" className="btn btn-danger">
+                <span id="delete-product" {...props} role="button" tabIndex="0" className="btn btn-danger btn-sm">
                     X
-                </button>
-            </div>
-        )
-    }
+                </span>
+            
+
+        );
 
 }
 
