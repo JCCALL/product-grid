@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import API from "../utils/API";
+import Buttons from "../Buttons/index";
 
 class ProductGrid extends Component {
     constructor(props) {
@@ -18,7 +19,8 @@ class ProductGrid extends Component {
                 title: data.title,
                 description: data.description,
                 quantity: data.quantity,
-                price: data.price
+                price: data.price,
+                id: data.id
             }));
             console.log(products);
             this.setState({
@@ -31,14 +33,18 @@ class ProductGrid extends Component {
     return (
       <div className=" container main my-5">
         <div className="row">
-          <div className="main-header text-center">
+            <div className="col-8">
             <h3>Products</h3>
-          </div>
+            </div>
+            <div className="col-4 float-right">
+            <Buttons />
+            </div>
         </div>
         <div className="row">
           <table className="table table-striped">
             <thead className="thead-dark">
               <tr>
+                <th scope="col">ID</th> 
                 <th scope="col">Image</th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Description</th>
@@ -51,7 +57,10 @@ class ProductGrid extends Component {
                 {this.state.product.map(data => 
                     <tr>
                         <td>
-                            <img src={ data.image }></img>
+                            { data.id }
+                        </td>
+                        <td>
+                            <img src={ data.image } alt="productImage"></img>
                         </td>
                         <td className="title">
                             { data.title }
