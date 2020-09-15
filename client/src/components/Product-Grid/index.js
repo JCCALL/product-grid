@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import API from "../utils/API";
 import Buttons from "../Buttons/index";
+import Delete from "../Delete/index";
 
 class ProductGrid extends Component {
     constructor(props) {
@@ -73,6 +74,9 @@ class ProductGrid extends Component {
                         </td>
                         <td>
                             ${ data.price } 
+                        </td>
+                        <td>
+                            <Delete />
                         </td>
                     </tr>
                     

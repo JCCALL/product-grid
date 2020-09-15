@@ -73,44 +73,29 @@ class Buttons extends Component {
                             <div className="row mr-1">
                                 <div className="col-md-6 form-line">
                                     <div className="form-group">
-                                        <label htmlFor="inputName">Product Title</label>
-                                        <br />
-                                        <input 
-                                            type="text" 
-                                            id="inputName" 
-                                            className="form-control"
-                                            name="inputName"
-                                            placeholder="Enter Title" 
-                                            value={this.state.inputTitle}
-                                            onChange={this.handleInputChange}/>
+                                        <label htmlFor="inputTitle">Product Name
+                                            <input
+                                                type="text"
+                                                id="inputTitle"
+                                                className="form-control"
+                                                name="inputTitle"
+                                                placeholder="Enter Title"
+                                                value={this.state.inputTitle}
+                                                onChange={this.handleInputChange}/>
+                                        </label>
                                     </div>
                                     <div className="form-group">
-                                    <label htmlFor="inputDescription">Description</label>
+                                    <label htmlFor="inputDescription">Description
                                         <input 
                                             type="text" 
                                             id="inputDescription" 
                                             className="form-control"
                                             name="inputDescription"
-                                            placeholder="Enter Intrustions"
+                                            placeholder="Enter Description"
                                             value={this.state.inputDescription}
-                                            onChange={this.handleInputChange}/>
+                                            onChange={this.handleInputChange}/></label>
                                     </div>
-                                </div>
-                                <div className="col-md-6 create-assignment-specifics form-line mb-3">
-                                    <div className="row form-group">
-                                        <div className="col-sm-6 form-padding-right">
-                                            <label htmlFor="quantity">Quantity</label>
-                                            <br />
-                                            <input 
-                                                type="text"
-                                                id="quantity" 
-                                                className="form-control" 
-                                                name="quantity"
-                                                value={this.state.inputQuantity}
-                                                onChange={this.handleInputChange}/>
-                                            
-                                        </div>
-                                        <div className="row form-group">
+                                    <div className="form-group">
                                         <label htmlFor="inputImage">Image</label>
                                         <br />
                                             <input 
@@ -123,18 +108,37 @@ class Buttons extends Component {
                                                 onChange={this.handleInputChange}/>
 
                                         </div>
-                                    </div>
-                                    <div className="row form-group">
+                                </div>
+                                <div className="col-md-6 form-line mb-3">
+                                    <div className="form-group">
+                                        <div className="col-sm-6 form-padding-right">
+                                            <label htmlFor="inputQuantity">Quantity 
+                                                <br />
+                                                <input
+                                                    type="text"
+                                                    id="inputQuantity"
+                                                    className="form-control"
+                                                    name="inputQuantity"
+                                                    value={this.state.inputQuantity}
+                                                    onChange={this.handleInputChange}/>
+                                            </label>
+                                            <br />
+                                        </div>
+                                        <div className="form-group">
                                         <div className="col-sm-6">
                                             <label htmlFor="inputPrice">Price</label>
+                                            
                                             <input 
-                                                type="number" 
+                                                type="text" 
                                                 id="inputPrice" 
                                                 className="form-control"
                                                 name="inputPrice" 
                                                 value={this.state.inputPrice}
                                                 onChange={this.handleInputChange}/>
                                         </div>
+                                        
+                                    </div>
+                                    
                                     </div>
                                 </div>
                             </div>
